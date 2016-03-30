@@ -9,10 +9,10 @@ Sign language translator using the Myo Armband
 
 ## Maintainers
 
--Connie Catedral
--Xiangyu Fan
--Jennifer Kuang 
--Wyatt MacRae
+1. Connie Catedral
+2. Xiangyu Fan
+3. Jennifer Kuang 
+4. Wyatt MacRae
 
 ## License
 Distributed under the Myo SDK license agreement
