@@ -1,7 +1,7 @@
 # SIGN-AID AUTOMATED TRANSLATOR OF SIGN LANGUAGE - DEVILSOFT
 
-Sign language translator using the Myo Armband
-Created for Capstone Project
+- Sign language translator with custom gestures using the Myo Armband
+- Created for Capstone Project
 
 ## Requirements
 
