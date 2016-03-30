@@ -1,6 +1,7 @@
 # SIGN-AID AUTOMATED TRANSLATOR OF SIGN LANGUAGE - DEVILSOFT
 
 Sign language translator using the Myo Armband
+Created for Capstone Project
 
 ## Requirements
 
@@ -9,7 +10,7 @@ Sign language translator using the Myo Armband
 
 ## Usage
 
-Run the file "Sign-Aid-VisualStudio2012" solution to run the program
+Open the file "Sign-Aid-VisualStudio2012" in Visual Studio to run the program
 
 ## Maintainers
 
