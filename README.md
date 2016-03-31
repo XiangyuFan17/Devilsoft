@@ -6,11 +6,6 @@
 ## Requirements
 
 1. Myo Connect: https://www.myo.com/start/
-2. Visual Studio 2012 or greater
-
-## Usage
-
-Open the file "Sign-Aid-VisualStudio2012" in Visual Studio to run the program
 
 ## Maintainers
 
