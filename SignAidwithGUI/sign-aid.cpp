@@ -7,9 +7,7 @@
 #include <stdexcept>
 #include <string>
 #include <algorithm>
-
-//EMG dependencies
-#include <array>
+#include "MyForm.h"
 
 //MessageBox dependencies
 #include <Windows.h>
@@ -35,6 +33,15 @@ float xGyro, yGyro, zGyro = 0;
 myo::Pose pose2;
 bool wavedIn, wavedOut = false; //for excuse me gesture
 bool circle1, circle2 = false; //for circle gesture
+
+using namespace hellomyoVisualStudio2012;
+using namespace System;
+using namespace System::Windows::Forms;
+
+ref class globalForm {
+public:
+	static MyForm^ SignAidApp2 = gcnew MyForm();
+};
 
 // Classes that inherit from myo::DeviceListener can be used to receive events from Myo devices. DeviceListener
 // provides several virtual functions for handling different kinds of events. If you do not override an event, the
@@ -162,7 +169,7 @@ public:
 	   /*****Back*****/
 	   if (pose2 == myo::Pose::waveIn && zAccel < 0){
 			TextToSpeak(L"Back");
-			MessageBox(0, "Back", "Gesture", MB_OK);
+			//MessageBox(0, "Back", "Gesture", MB_OK);
 		}
 	   
 	   /*****Circle*****/
@@ -172,7 +179,7 @@ public:
 			circle2 = true;
 		if (circle1 == true && circle2 == true){
 			TextToSpeak(L"Circle");
-			MessageBox(0, "Circle", "Gesture", MB_OK);
+			//MessageBox(0, "Circle", "Gesture", MB_OK);
 			circle1 = false;
 			circle2 = false;
 		}
@@ -180,19 +187,23 @@ public:
 		/*****Hello*****/
 		if (pose2 == myo::Pose::fingersSpread && pitch >= 1.1 && pitch <= 1.3 ){
 			TextToSpeak(L"Hello");
-			MessageBox(0, "Hello", "Gesture", MB_OK);
+			globalForm::SignAidApp2->label1->Text = "Hello";
+			Application::Run(globalForm::SignAidApp2);
+			//MessageBox(0, "Hello", "Gesture", MB_OK);
 		}
 
 		/*****Goodbye*****/
 		if (pose2 == myo::Pose::fingersSpread && pitch >= -0.8 && pitch <= -0.4 ){
 			TextToSpeak(L"Goodbye");
-			MessageBox(0, "Goodbye", "Gesture", MB_OK);
+			globalForm::SignAidApp2->label1->Text = "Goodbye";
+			Application::Run(globalForm::SignAidApp2);
+			//MessageBox(0, "Goodbye", "Gesture", MB_OK);
 		}
 
 		/*****Help*****/
 		if (pose2 == myo::Pose::fist && pitch >= 0.4 && pitch <= 0.7){
 			TextToSpeak(L"Help");
-			MessageBox(0, "Help", "Gesture", MB_OK);
+			//MessageBox(0, "Help", "Gesture", MB_OK);
 		}
 
 		/*****Excuse Me*****/
@@ -202,7 +213,7 @@ public:
 			wavedOut = true;
 		if (wavedIn == true && wavedOut == true){
 			TextToSpeak(L"Excuse Me");
-			MessageBox(0, "Excuse Me", "Gesture", MB_OK);
+			//MessageBox(0, "Excuse Me", "Gesture", MB_OK);
 			wavedIn = false;
 			wavedOut = false;
 		}
@@ -260,8 +271,18 @@ void TextToSpeak(std::wstring phrase){
 
 }
 
-int main(int argc, char** argv)
-{
+
+//namespace hellomyoVisualStudio2012 {    
+  //  using namespace System;
+    //using namespace System::Windows::Forms;
+
+   [STAThread]
+    int main(array<System::String ^> ^args)
+	{
+	 Application::EnableVisualStyles();
+     Application::SetCompatibleTextRenderingDefault(false);
+
+	//MyForm^ SignAidApp = gcnew MyForm();
 
     // We catch any exceptions that might occur below -- see the catch statement for more details.
     try {
@@ -286,6 +307,8 @@ int main(int argc, char** argv)
     // We've found a Myo.
     std::cout << "Connected to a Myo armband!" << std::endl << std::endl;
 	
+	//SignAidApp->label1->Text = "Connected to a Myo Armband";
+	
 	// Next we construct an instance of our DeviceListener, so that we can register it with the Hub.
     DataCollector collector;
 
@@ -293,6 +316,8 @@ int main(int argc, char** argv)
     // Hub::run() to send events to all registered device listeners.
     hub.addListener(&collector);
 
+	
+				 
     // Finally we enter our main loop.
     while (1) {
         // In each iteration of our main loop, we run the Myo event loop for a set number of milliseconds.
@@ -301,7 +326,11 @@ int main(int argc, char** argv)
         // After processing events, we call the print() member function we defined above to print out the values we've
         // obtained from any events that have occurred.
         collector.print();
+
+		//Application::Run(SignAidApp);
     }
+
+	
 
     // If a standard exception occurred, we print out its message and exit.
     } catch (const std::exception& e) {
@@ -311,3 +340,4 @@ int main(int argc, char** argv)
         return 1;
     }
 }
+//}
