@@ -16,7 +16,7 @@
 
 ## Notes
 
-- For best use, wear the armband on the right arm with the light facing the ceiling
+- For best use, wear the armband on the right arm with the light facing up
 - Double Tap to lock or unlock the program
 
 ## Maintainers
