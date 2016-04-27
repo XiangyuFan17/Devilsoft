@@ -7,6 +7,18 @@
 
 1. Myo Connect: https://www.myo.com/start/
 
+## Recommended Usage
+
+-Connect Myo Armband to your computer using Myo Connect
+-Download the project as a zip file and use the provided Visual Studio projects
+-For the GUI version, place the color.png and title.png files into your local Documents folder for correct display
+-See Gesture-Handbook.txt for info on implemented gestures
+
+## Notes
+
+-For best use, wear the armband on the right arm with the light facing the ceiling
+-Double Tap to lock or unlock the program
+
 ## Maintainers
 
 1. Connie Catedral

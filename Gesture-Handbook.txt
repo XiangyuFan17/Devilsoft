@@ -1,0 +1,41 @@
+#######################################
+GESTURE HANDBOOK
+#######################################
+
+This file is an instruction manual on the implemented gestures of Sign Aid
+
+HELLO
+-------------
+1. Fingers Spread at stomach level
+2. Move arm upwards
+
+GOODBYE
+-------------
+1. Fingers Spread at stomach level
+2. Move arm downwards
+
+THANK YOU
+-------------
+1. Place arm behind your back
+2. Wave In
+
+HELP
+-------------
+1. Fist at chest level
+2. Move arm upwards
+
+EXCUSE ME
+-------------
+1. Wave In, then Wave Out
+OR
+2. Wave Out, then Wave In
+
+CIRCLE
+-------------
+1. Straighten arm and point fingers toward ground
+2. Move arm in a fast, steady circle motion (either direction)
+
+
+
+
+
