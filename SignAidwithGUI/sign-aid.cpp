@@ -9,10 +9,6 @@
 #include <algorithm>
 #include <Gestures.h>
 
-//MessageBox dependencies
-#include <Windows.h>
-#pragma comment(lib,"User32.lib")
-
 //TTS dependencies
 #define _ATL_APARTMENT_THREADED
 #include <atlbase.h>

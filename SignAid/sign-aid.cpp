@@ -146,18 +146,18 @@ public:
 		// Print out the orientation. Orientation data is always available, even if no arm is currently recognized.
        std::cout << '[' << "ROLL: " << roll << ']'
                  << '[' << "PITCH: " << pitch << ']'
-                 << '[' << "YAW: " << yaw << ']';
+                 << '[' << "YAW: " << yaw << ']' << std::endl;
 				 
 
 		// Print out accelerometer data
-		//std::cout << "[" << "X: " << xAccel << ']' 
-			//	  << '[' << "Y: " << yAccel << ']'
-				//  << '[' << "Z: " << zAccel << ']';
+		//std::cout << "[" << " ACCEL X: " << xAccel << ']'
+			//	  << '[' << "ACCEL Y: " << yAccel << ']' 
+				//  << '[' << "ACCEL Z: " << zAccel << ']' << std::endl;
 
 		// Print out gyroscope data
-		//std::cout << "[" << "X: " << xGyro << ']'
-				// << '[' << "Y: " << yGyro  << ']'
-				//std::cout << '[' << "Z: " << zGyro  << ']';
+		//std::cout << "[" << "GYRO X: " << xGyro << ']'
+			//	 << '[' << "GYRO Y: " << yGyro  << ']'
+				// << '[' << "GYRO Z: " << zGyro  << ']' << std::endl;
 	  
 	   /*****Back*****/
 	   if (pose2 == myo::Pose::waveIn && zAccel < 0){

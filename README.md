@@ -10,8 +10,9 @@
 ## Recommended Usage
 
 - Connect Myo Armband to your computer using Myo Connect
-- Download the project as a zip file and use the provided Visual Studio projects
+- Download the project as a zip file, extract, and use the provided Visual Studio projects
 - For the GUI version, place the color.png and title.png files into your local Documents folder for correct display
+- GUI version uses Arciform font (http://befonts.com/arciform-font.html); font file is included in SignAidwithGUI folder, install if desired
 - See Gesture-Handbook.txt for info on implemented gestures
 
 ## Notes
