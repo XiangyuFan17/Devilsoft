@@ -2,6 +2,8 @@
 ### An Automated Translator of Sign Language
 ##### by DEVILSOFT
 
+## Info
+
 - Sign language translator with custom gestures using the Myo Armband
 - Created for Capstone Project
 
