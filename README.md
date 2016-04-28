@@ -27,6 +27,7 @@
 - In the GUI version, background color can be changed by clicking on the color palette in the left-hand corner (see screenshots in SignAidwithGUI/Screenshots folder)
 - An example of the program in use can be viewed here: https://www.youtube.com/watch?v=W9w12QtB6DM
 - An executable of Sign Aid can be found in the bin folder
+  * title.png and color.png must be placed into local Documents folder for executable to run properly
 
 ## Maintainers
 
