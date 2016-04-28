@@ -1,5 +1,5 @@
 # SIGN-AID 
-### AUTOMATED TRANSLATOR OF SIGN LANGUAGE
+### An Automated Translator of Sign Language
 ##### by DEVILSOFT
 
 - Sign language translator with custom gestures using the Myo Armband
@@ -15,7 +15,7 @@
 - Download the project as a zip file, extract, and use the provided Visual Studio projects
 - For the GUI version, place the color.png and title.png files into your local Documents folder for correct display
 - GUI version uses Arciform font (http://befonts.com/arciform-font.html)
--- Font file is included in SignAidwithGUI folder, install if desired
+  * Font file is included in SignAidwithGUI folder, install if desired
 - See Gesture-Handbook.txt for info on implemented gestures
 
 ## Notes
