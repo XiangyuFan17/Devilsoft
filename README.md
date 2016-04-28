@@ -19,6 +19,8 @@
 
 - For best use, wear the armband on the right arm with the light facing up
 - Double Tap to lock or unlock the program
+- In the GUI version, background color can be changed by clicking on the color palette in the left-hand corner (see screenshots in SignAidwithGUI/Screenshots folder)
+- An example of the program in use can be viewed here: https://www.youtube.com/watch?v=W9w12QtB6DM
 
 ## Maintainers
 
